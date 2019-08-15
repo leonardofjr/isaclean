@@ -14,3 +14,5 @@
 Route::get('/', function () {
     return view('frontend.pages.home.home');
 });
+
+Route::get('/about', 'Frontend\AboutController@index')->name('About');
