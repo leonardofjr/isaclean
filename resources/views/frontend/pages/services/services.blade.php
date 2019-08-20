@@ -17,26 +17,27 @@
 
     </section>
     <section class="">
-        <div class="container-fluid">
+        <div class="container">
             <div class="row">
-                <div class="col-lg-7">
+                <div class="col-lg-8">
                     <h2 class="h2 py-2">Welcome to ISA Commercial Cleaning Services</h2>
                     <h3 class="h3">CLEANING OFFICES, SCHOOLS AND MUCH MORE FOR OVER 20 YEARS</h3>
                     <p>For over 20 years we have provided professional janitorial services in Markham and surrounding areas such as Whitchurch Stouffville and Richmond Hill</h1>
                 </div>
-                <div class="col-lg-5 image-1">
-                   
+                <div class="col-lg-4">
+                    <img src="imgs/floor-scrubbing-machine.jpg" alt="The image displays a professional cleaner scrubbing the floor utilizing a floor scrubbing machine.">
                 </div>
             </div>
          </div>
     </section>
 
     <section class="">
-        <div class="container-fluid">
+        <div class="container">
             <div class="row">
-            <div class="col-lg-7 image-2">
+            <div class="col-lg-4">
+                    <img class="img-fluid" src="imgs/floor-sweeping.gif" alt="The image displays a professional cleaner scrubbing the floor utilizing a floor scrubbing machine.">
                 </div>
-                <div class="col-lg-5 bg-primary">
+                <div class="col-lg-8 bg-primary">
                     <h2 class="h2">CUSTOMER SATISFACTION ISN’T A MOP OR A BROOM, IT’S COMMUNICATION</h2>
                     <p>For over 20 years we have provided professional janitorial services in Markham and surrounding areas such as Whitchurch Stouffville and Richmond Hill</h1>
                 </div>
@@ -59,7 +60,8 @@
                     </ol>
                 </div>
 
-                <div class="col-lg-6 image-3">
+                <div class="col-lg-6">
+                    <img class="img-fluid" src="imgs/janitor-supplies.gif" alt="The image displays a professional cleaner scrubbing the floor utilizing a floor scrubbing machine.">
                 </div>
             </div>
          </div>
