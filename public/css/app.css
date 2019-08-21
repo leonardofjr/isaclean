@@ -10690,3 +10690,10 @@ header {
   background-image: url(/images/janitor-supplies.gif?6cad4a9d3aece3252869b46f9fe3060d);
 }
 
+.image-5 {
+  height: 300px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(/images/cleaning-services-supplies.jpg?6cad5e895146008ea659d09c9ba23691);
+}
+

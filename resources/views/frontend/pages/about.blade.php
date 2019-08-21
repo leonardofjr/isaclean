@@ -3,7 +3,7 @@
     <section class="container-fluid">
            <div class="">
               <div class="row">
-                  <div class="col-lg-6  bg-secondary">
+                  <div class="col-lg-6 image-5">
 
                   </div>
                   <div class="col-lg-6">
@@ -14,7 +14,7 @@
             </div>
             <div class="container">
               <div class="row">
-                    <div class="col-lg-6">
+                    <div class="col-lg-6 p-3 p-lg-4 bg-primary">
                     <h2 class="h2">OUR CUSTOMER EXPERIENCE AND COMMUNICATION ENSURES YOU GET EVERY BANG FOR YOUR BUCK</h2>
                     <p>We do have dedicated teams of personnel with hands on experience that are always committed to provide reliable and competitive services to all our clients. We execute all our jobs timely to a high safety and quality standard.</p>
                     <ul>

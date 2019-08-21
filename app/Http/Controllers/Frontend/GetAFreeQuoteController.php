@@ -5,7 +5,7 @@ namespace App\Http\Controllers\Frontend;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
-class AboutController extends Controller
+class GetAFreeQuoteController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,7 +14,7 @@ class AboutController extends Controller
      */
     public function index()
     {
-        return view('frontend/pages/about');
+        return view('frontend/pages/quote');
     }
 
     /**
