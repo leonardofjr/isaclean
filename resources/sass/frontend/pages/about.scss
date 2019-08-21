@@ -1,12 +1,31 @@
+
 .image-4 {
+    height:500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('imgs/cleaning-services-supplies.jpg');
+}
+
+.image-5 {
     height:500px;
     background-repeat: no-repeat;
     background-size: cover;
     background-image: url('imgs/janitor-supplies.gif');
 }
-.image-5 {
-    height:300px;
+.image-6 {
+    height:500px;
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url('imgs/cleaning-services-supplies.jpg');
+    background-image: url('imgs/janitor-supplies.gif');
+}
+
+
+
+// Shift middle row to the left
+
+@include media-breakpoint-up(lg) {
+    .container-fluid:nth-child(1) .container-fluid:nth-child(2) .row {
+        position: relative;
+        left: 200px;
+    }
 }

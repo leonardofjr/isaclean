@@ -1,0 +1,23 @@
+main {
+    
+    .image-wrap-7 img {
+        max-width: 100%;
+    }
+
+    @include media-breakpoint-up(lg) {
+        .image-wrap-7 img {
+            max-width: 1200px;
+        }
+    }
+
+    .image-wrap-8 img {
+        max-width: 100%;
+    }
+
+    @include media-breakpoint-up(lg) {
+        .image-wrap-8 img {
+            max-width: 1200px;
+
+        }
+    }
+}

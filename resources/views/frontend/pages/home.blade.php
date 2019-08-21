@@ -1,6 +1,6 @@
 @extends('frontend.layouts.app')
 @section('content')
-    <section class="bg-secondary">
+    <section class="bg-primary">
         <div class="container">
             <div class="row pt-4">
                 <div class="col-lg-7 p-md-0">

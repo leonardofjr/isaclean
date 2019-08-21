@@ -10645,7 +10645,7 @@ a.text-dark:focus {
 }
 
 .bg-primary {
-  background-color: #1111aa !important;
+  background-color: #000033 !important;
   color: #fff;
 }
 
@@ -10660,6 +10660,10 @@ header {
 
 .navbar-brand img {
   width: 70%;
+}
+
+body {
+  overflow-x: hidden;
 }
 
 .image-1 {
@@ -10687,13 +10691,47 @@ header {
   height: 500px;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url(/images/janitor-supplies.gif?6cad4a9d3aece3252869b46f9fe3060d);
+  background-image: url(/images/cleaning-services-supplies.jpg?6cad5e895146008ea659d09c9ba23691);
 }
 
 .image-5 {
-  height: 300px;
+  height: 500px;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url(/images/cleaning-services-supplies.jpg?6cad5e895146008ea659d09c9ba23691);
+  background-image: url(/images/janitor-supplies.gif?6cad4a9d3aece3252869b46f9fe3060d);
+}
+
+.image-6 {
+  height: 500px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(/images/janitor-supplies.gif?6cad4a9d3aece3252869b46f9fe3060d);
+}
+
+@media (min-width: 992px) {
+  .container-fluid:nth-child(1) .container-fluid:nth-child(2) .row {
+    position: relative;
+    left: 200px;
+  }
+}
+
+main .image-wrap-7 img {
+  max-width: 100%;
+}
+
+@media (min-width: 992px) {
+  main .image-wrap-7 img {
+    max-width: 1200px;
+  }
+}
+
+main .image-wrap-8 img {
+  max-width: 100%;
+}
+
+@media (min-width: 992px) {
+  main .image-wrap-8 img {
+    max-width: 1200px;
+  }
 }
 

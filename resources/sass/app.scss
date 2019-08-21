@@ -14,6 +14,9 @@
 
 @import 'frontend/header';
 
+// Base
+@import 'frontend/base';
 // Pages
 @import 'frontend/pages/home';
 @import 'frontend/pages/about';
+@import 'frontend/pages/services';
