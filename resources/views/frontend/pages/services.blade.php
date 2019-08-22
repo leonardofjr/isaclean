@@ -1,7 +1,6 @@
 @extends('frontend.layouts.app')
 @section('content')
-    <section >
-           <div class="container">
+           <section class="container">
               <div class="row">
 
                  <div class="col-lg-6">
@@ -17,9 +16,9 @@
                   </div>
 
               </div>
-            </div>
+            </section>
             
-            <div class="container mb-4">
+            <section class="container mb-4">
               <div class="row">
                   
                  <div class="col-lg-6 image-wrap-8 p-0">
@@ -49,8 +48,9 @@
 
 
               </div>
-            </div>
-            <div class="bg-primary">
+            </section>
+            
+            <section class="bg-primary">
               <div class="container">
                 <div class="row py-lg-5 bg-primary">
                         <div class="col-lg-6">
@@ -64,7 +64,6 @@
                     </div>
                 </div>
               </div>
-            </div>
+            </section>
 
-    </section>
 @endsection

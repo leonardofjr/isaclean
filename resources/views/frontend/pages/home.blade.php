@@ -1,6 +1,6 @@
 @extends('frontend.layouts.app')
 @section('content')
-    <section class="bg-primary">
+    <section class="bg-primary main-section section-1 ">
         <div class="container">
             <div class="row pt-4">
                 <div class="col-lg-7 p-md-0">
@@ -16,35 +16,44 @@
          </div>
 
     </section>
-    <section class="">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-lg-7 p-3 p-lg-5">
+    <section class="container main-section section-2">
+              <div class="row">
+
+                 <div class="col-lg-6 p-0">
+                    <div class=" p-3" style="width: 100%; height: 100%">
                     <h2 class="h2 py-2">Welcome to ISA Commercial Cleaning Services</h2>
                     <h3 class="h3">CLEANING OFFICES, SCHOOLS AND MUCH MORE FOR OVER 20 YEARS</h3>
                     <p>For over 20 years we have provided professional janitorial services in Markham and surrounding areas such as Whitchurch Stouffville and Richmond Hill</h1>
-                </div>
-                <div class="col-lg-5 image-1">
-                   
-                </div>
-            </div>
-         </div>
+                      </div>
+                  </div>
+
+                  <div class="col-lg-6 image-wrap-7 p-0">
+                    <img  src="images/floor-scrubbing-machine.jpg" alt="">
+                  </div>
+
+              </div>
+    </section>
+    
+    <section class="container mb-4">
+              <div class="row">
+                  
+                 <div class="col-lg-6 image-wrap-8 p-0">
+                    <img  align="right" src="images/floor-sweeping.gif" alt="">
+                  </div>
+
+                 <div class="col-lg-6 p-0" >
+                     <div class=" bg-primary p-3" style="width 100%; height: 100%">
+                        <h2 class="h2">CUSTOMER SATISFACTION ISN’T A MOP OR A BROOM, IT’S COMMUNICATION</h2>
+                        <p>For over 20 years we have provided professional janitorial services in Markham and surrounding areas such as Whitchurch Stouffville and Richmond Hill</h1>
+                      </div>
+                  </div>
+
+
+              </div>
     </section>
 
-    <section class="">
-        <div class="container-fluid">
-            <div class="row">
-            <div class="col-lg-7 image-2">
-                </div>
-                <div class="col-lg-5 bg-primary p-3 p-lg-5">
-                    <h2 class="h2">CUSTOMER SATISFACTION ISN’T A MOP OR A BROOM, IT’S COMMUNICATION</h2>
-                    <p>For over 20 years we have provided professional janitorial services in Markham and surrounding areas such as Whitchurch Stouffville and Richmond Hill</h1>
-                </div>
-            </div>
-         </div>
-    </section>
 
-    <section class="">
+    <section class="main-section section-4">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 bg-primary p-3 p-lg-5">
@@ -59,7 +68,8 @@
                     </ol>
                 </div>
 
-                <div class="col-lg-6 image-3">
+                <div class="col-lg-6 image-wrap pl-0">
+                     <img  width="100%" src="/images/janitor-supplies.gif?6cad4a9d3aece3252869b46f9fe3060d" alt="">
                 </div>
             </div>
          </div>
