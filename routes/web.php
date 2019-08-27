@@ -22,3 +22,5 @@ Route::get('/services', 'Frontend\ServicesController@index')->name('Services');
 Route::get('/news', 'Frontend\NewsController@index')->name('News');
 
 Route::get('/get-a-free-quote', 'Frontend\GetAFreeQuoteController@index')->name('GetAFreeQuote');
+
+Route::get('/write-a-testimonial', 'Frontend\TestimonialController@index')->name('GetAFreeQuote');

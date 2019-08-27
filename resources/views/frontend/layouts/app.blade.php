@@ -27,7 +27,7 @@
           @yield('content')
         </main>
 
-        <footer>
+        <footer class="mt-3">
             @include('frontend.layouts.components.footer')
         </footer>
     </body>
