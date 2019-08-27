@@ -1,4 +1,8 @@
 @extends('frontend.layouts.app')
+@section('title', 'ISA Commercial Cleaning Services')
+@section('meta-seo')
+    <meta name="description"  content="We provide cleaning services in Markham and surrounding areas such as Stouffville and Richmond Hill">
+@endsection
 @section('content')
            <section class="container">
               <div class="row">
@@ -11,7 +15,7 @@
      
                   </div>
 
-                  <div class="col-lg-6 image-wrap-7">
+                  <div class="col-lg-6 image-wrap-7 mb-5 mb-lg-0">
                     <img  src="imgs/polishing-floor.gif" alt="">
                   </div>
 
@@ -52,7 +56,7 @@
             
             <section class="bg-primary">
               <div class="container">
-                <div class="row py-lg-5 bg-primary">
+                <div class="row py-3 py-lg-5 bg-primary">
                         <div class="col-lg-6">
                         <h2 class="h2">PERFORMANCE ASSURANCE PROGRAM ENSURES YOU GET THE BEST CLEANING SERVICE</h2>
                         <p>The ISA Performance Assurance Program is designed to establish a continuous method of evaluating and monitoring janitorial services. The program is tailored to suit various types of facilities.</p>

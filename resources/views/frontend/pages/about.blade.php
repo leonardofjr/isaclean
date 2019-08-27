@@ -1,4 +1,8 @@
 @extends('frontend.layouts.app')
+@section('title', 'ISA Commercial Cleaning Services')
+@section('meta-seo')
+    <meta name="description"  content="We provide cleaning services in Markham and surrounding areas such as Stouffville and Richmond Hill">
+@endsection
 @section('content')
 
           <section class="container main-section section-1">
@@ -36,7 +40,7 @@
                       </div>
                   </div>
 
-                  <div class="col-lg-6 image-wrap-7 p-0">
+                  <div class="col-lg-6 image-wrap-7 mb-4 mb-lg-0 p-0">
                     <img  src="imgs/business-meeting.jpg" alt="">
                   </div>
 
