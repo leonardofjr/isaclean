@@ -23,4 +23,6 @@ Route::get('/news', 'Frontend\NewsController@index')->name('News');
 
 Route::get('/get-a-free-quote', 'Frontend\GetAFreeQuoteController@index')->name('GetAFreeQuote');
 
-Route::get('/write-a-testimonial', 'Frontend\TestimonialController@index')->name('GetAFreeQuote');
+Route::get('/write-a-testimonial', 'Frontend\TestimonialController@index')->name('Write a Testimonial');
+
+Route::post('/send_mail', 'Frontend\TestimonialController@mail')->name('Write a Testimonial');

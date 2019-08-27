@@ -16,7 +16,8 @@
             </div>
       </div>
       <div class="col-lg-6">
-         <form method="post" action="https://www.isaclean.ca/get-a-free-quote/">
+         <form method="post" action="send_mail">
+         <input type="hidden" name="_token" value={{csrf_token()}}>
          <div class="form-group">
             <input type="text" id="company_name" class="form-control" name="company_name" placeholder="Company Name *">
         </div>
