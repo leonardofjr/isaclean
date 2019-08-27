@@ -1,11 +1,11 @@
 @extends('frontend.layouts.app')
 @section('content')
 
-          <section class="container ">
+          <section class="container main-section section-1">
               <div class="row">
                   
                  <div class="col-lg-6 image-wrap-8 p-0">
-                    <img align="right" src="images/cleaning-services-supplies.jpg" alt="">
+                    <img align="right" src="imgs/reliable-cleaning-service.png" alt="">
                   </div>
 
                  <div class="col-lg-6 p-0" >
@@ -37,7 +37,7 @@
                   </div>
 
                   <div class="col-lg-6 image-wrap-7 p-0">
-                    <img  src="images/cleaning-services-supplies.jpg" alt="">
+                    <img  src="imgs/business-meeting.jpg" alt="">
                   </div>
 
               </div>

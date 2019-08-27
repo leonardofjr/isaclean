@@ -27,7 +27,7 @@
                       </div>
                   </div>
 
-                  <div class="col-lg-6 image-wrap-7 p-0">
+                  <div class="col-lg-6 image-wrap-7 mb-4 mb-lg-0 p-0">
                     <img  src="images/floor-scrubbing-machine.jpg" alt="">
                   </div>
 
@@ -38,7 +38,7 @@
               <div class="row">
                   
                  <div class="col-lg-6 image-wrap-8 p-0">
-                    <img  align="right" src="images/floor-sweeping.gif" alt="">
+                    <img  align="right" src="imgs/bucket-cleaning-supplies.jpeg" alt="">
                   </div>
 
                  <div class="col-lg-6 p-0" >
@@ -69,7 +69,7 @@
                 </div>
 
                 <div class="col-lg-6 image-wrap pl-0">
-                     <img  width="100%" src="/images/janitor-supplies.gif?6cad4a9d3aece3252869b46f9fe3060d" alt="">
+                     <img style="width: 100%"   src="/imgs/carpet-cleaning.gif" alt="">
                 </div>
             </div>
          </div>
