@@ -24,37 +24,64 @@
          <form method="post" action="send-quote">
         <input type="hidden" name="_token" value={{csrf_token()}}>
          <div class="form-group">
-            <input type="text" id="company_name" class="form-control" name="company_name" placeholder="Company Name *">
+            <input type="text" id="company_name" class="form-control @error('company_name') is-invalid @enderror" name="company_name" placeholder="Company Name *">
         </div>
+        @error('company_name')
+            <div class="alert alert-danger">{{ $message }}</div>
+         @enderror
         <div class="form-group">
-            <input type="text" id="first_name" class="form-control" name="first_name" placeholder="First Name *">
+            <input type="text" id="first_name" class="form-control @error('first_name') is-invalid @enderror" name="first_name" placeholder="First Name *">
         </div>
+        @error('first_name')
+            <div class="alert alert-danger">{{ $message }}</div>
+        @enderror
         <div class="form-group">
-            <input type="text" id="last_name" class="form-control" name="last_name" placeholder="Last Name *">
+            <input type="text" id="last_name" class="form-control @error('last_name') is-invalid @enderror" name="last_name" placeholder="Last Name *">
         </div>
+        @error('last_name')
+            <div class="alert alert-danger">{{ $message }}</div>
+        @enderror
         <div class="form-group">
-            <input type="text" id="email" class="form-control" name="email" placeholder="Email *">
+            <input type="text" id="email" class="form-control @error('email') is-invalid @enderror" name="email" placeholder="Email *">
         </div>
+        @error('email')
+            <div class="alert alert-danger">{{ $message }}</div>
+        @enderror
         <div class="form-group">
-            <input type="text" id="phone" class="form-control" name="phone"  placeholder="Phone" pattern="[0-9\s-]*" title="Only numbers allowed.">
+            <input type="text" id="phone" class="form-control @error('phone') is-invalid @enderror" name="phone"  placeholder="Phone" pattern="[0-9\s-]*" title="Only numbers allowed.">
         </div>
+        @error('phone')
+            <div class="alert alert-danger">{{ $message }}</div>
+        @enderror
         <div class="form-group">
-            <input type="text" id="street_address" class="form-control" name="street_address" placeholder="Street Address">
+            <input type="text" id="street_address" class="form-control @error('street_address') is-invalid @enderror" name="street_address" placeholder="Street Address">
         </div>
+        @error('street_address')
+            <div class="alert alert-danger">{{ $message }}</div>
+        @enderror
         <div class="form-group">
-            <input type="text" id="city" class="form-control" name="city" placeholder="City *">
+            <input type="text" id="city" class="form-control @error('city') is-invalid @enderror" name="city" placeholder="City *">
         </div>
+        @error('city')
+            <div class="alert alert-danger">{{ $message }}</div>
+        @enderror
         <div class="form-group">
-            <input type="text" id="postal_code" class="form-control" name="postal_code" placeholder="Postal Code *">
+            <input type="text" id="postal_code" class="form-control @error('postal_code') is-invalid @enderror" name="postal_code" placeholder="Postal Code *">
         </div>
+        @error('postal_code')
+            <div class="alert alert-danger">{{ $message }}</div>
+        @enderror
         <div class="form-group">
-            <select id="province" class="form-control" name="province">
+            <select id="province" class="form-control @error('province') is-invalid @enderror" name="province">
                <option value="">Select Province *</option>
                <option value="Ontario">Ontario</option>
             </select>
         </div>
+        @error('province')
+            <div class="alert alert-danger">{{ $message }}</div>
+        @enderror
         <div class="form-group">
-            <select id="facility_type" class="form-control" name="facility_type">
+            <select id="facility_type" class="form-control @error('facility_type') is-invalid @enderror" name="facility_type">
                <option value="">Facility Type *</option>
                <option value="Airline">Airline</option>
                <option value="Apartment">Apartment</option>
@@ -107,8 +134,11 @@
                <option value="Theater/Arts">Theater/Arts</option>
             </select>
         </div>
+        @error('facility_type')
+            <div class="alert alert-danger">{{ $message }}</div>
+        @enderror
         <div class="form-group">
-            <select id="frequency" class="form-control" name="frequency">
+            <select id="frequency" class="form-control @error('frequency') is-invalid @enderror" name="frequency">
                <option value="">Cleaning Frequency</option>
                <option value="One Time Specialty Services">One Time Specialty Services</option>
                <option value="1 day per week">1 day per week</option>
@@ -118,10 +148,15 @@
                <option value="Bi-Weekly">Bi-Weekly</option>
             </select>
         </div>
+         @error('frequency')
+            <div class="alert alert-danger">{{ $message }}</div>
+         @enderror
         <div class="form-group">
-             <textarea rows="10" name="message" id="message" class="form-control" placeholder="Message"></textarea>
+             <textarea rows="10" name="message" id="message" class="form-control @error('message') is-invalid @enderror" placeholder="Message"></textarea>
         </div>
-
+         @error('message')
+            <div class="alert alert-danger">{{ $message }}</div>
+         @enderror
         <button type="submit" class="btn btn-primary">Submit</button>
          </form>
       </div>

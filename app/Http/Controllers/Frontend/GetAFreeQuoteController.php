@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Mail;
 use App\Mail\SendQuoteRequest;
+use App\Http\Requests\GetAFreeQuoteFormValidation;
 
 class GetAFreeQuoteController extends Controller
 {
@@ -19,7 +20,7 @@ class GetAFreeQuoteController extends Controller
         return view('frontend/pages/quote');
     }
 
-    public function mail() 
+    public function mail(GetAFreeQuoteFormValidation $request) 
     {   $to = 'leonardo.f.jr@gmail.com';
         Mail::to($to)->send(new SendQuoteRequest);
     }
