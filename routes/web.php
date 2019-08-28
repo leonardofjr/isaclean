@@ -21,8 +21,8 @@ Route::get('/services', 'Frontend\ServicesController@index')->name('Services');
 
 Route::get('/news', 'Frontend\NewsController@index')->name('News');
 
-Route::get('/get-a-free-quote', 'Frontend\GetAFreeQuoteController@index')->name('GetAFreeQuote');
+Route::get('/get-a-free-quote', 'Frontend\GetAFreeQuoteController@index')->name('Get A Free Quote');
+Route::post('/send-quote', 'Frontend\GetAFreeQuoteController@mail');
 
 Route::get('/write-a-testimonial', 'Frontend\TestimonialController@index')->name('Write a Testimonial');
-
-Route::post('/send_mail', 'Frontend\TestimonialController@mail')->name('Write a Testimonial');
+Route::post('/send-testimonial', 'Frontend\TestimonialController@mail');

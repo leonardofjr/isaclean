@@ -21,7 +21,8 @@
          </div>
       </div>
       <div class="col-lg-6">
-         <form method="post" action="https://www.isaclean.ca/get-a-free-quote/">
+         <form method="post" action="send-quote">
+        <input type="hidden" name="_token" value={{csrf_token()}}>
          <div class="form-group">
             <input type="text" id="company_name" class="form-control" name="company_name" placeholder="Company Name *">
         </div>
@@ -107,7 +108,7 @@
             </select>
         </div>
         <div class="form-group">
-            <select id="cleaning_frequency" class="form-control" name="cleaning_frequency">
+            <select id="frequency" class="form-control" name="frequency">
                <option value="">Cleaning Frequency</option>
                <option value="One Time Specialty Services">One Time Specialty Services</option>
                <option value="1 day per week">1 day per week</option>

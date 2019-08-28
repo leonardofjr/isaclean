@@ -4,6 +4,8 @@ namespace App\Http\Controllers\Frontend;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use Illuminate\Support\Facades\Mail;
+use App\Mail\SendQuoteRequest;
 
 class GetAFreeQuoteController extends Controller
 {
@@ -15,6 +17,11 @@ class GetAFreeQuoteController extends Controller
     public function index()
     {
         return view('frontend/pages/quote');
+    }
+
+    public function mail() 
+    {   $to = 'leonardo.f.jr@gmail.com';
+        Mail::to($to)->send(new SendQuoteRequest);
     }
 
     /**
