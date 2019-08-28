@@ -6,6 +6,8 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Mail;
 use App\Mail\SendTestimonial;
+use App\Http\Requests\SendTestimonialValidation;
+
 class TestimonialController extends Controller
 {
     /**
@@ -18,14 +20,10 @@ class TestimonialController extends Controller
         return view('frontend/pages/testimonial');
     }
 
-    public function mail(Request $request)
-    {   $to = 'leonardo.f.jr@gmail.com';
-        $subject = $_POST["first_name"] . ' ' . $_POST["last_name"] . ' ' . 'wrote us a testimonial.';
-        $company_name = $_POST["company_name"];
-        $first_name = $_POST["first_name"];
-        $last_name = $_POST["last_name"];
-        $message = $_POST["message"];
-        
+    public function mail(SendTestimonialValidation $request)
+    {  
+         $to = 'leonardo.f.jr@gmail.com';
+
         Mail::to($to)->send(new SendTestimonial);
     }
 
