@@ -19,19 +19,29 @@
          <form method="post" action="send-testimonial">
          <input type="hidden" name="_token" value={{csrf_token()}}>
          <div class="form-group">
-            <input type="text" id="company_name" class="form-control" name="company_name" placeholder="Company Name *">
+            <input type="text" id="company_name" class="form-control @error('company_name') is-invalid @enderror" name="company_name" placeholder="Company Name *">
         </div>
+            @error('company_name')
+                <div class="alert alert-danger">{{ $message }}</div>
+            @enderror
         <div class="form-group">
-            <input type="text" id="first_name" class="form-control" name="first_name" placeholder="First Name *">
+            <input type="text" id="first_name" class="form-control @error('first_name') is-invalid @enderror" name="first_name" placeholder="First Name *">
         </div>
+            @error('first_name')
+                <div class="alert alert-danger">{{ $message }}</div>
+            @enderror
         <div class="form-group">
-            <input type="text" id="last_name" class="form-control" name="last_name" placeholder="Last Name *">
+            <input type="text" id="last_name" class="form-control @error('last_name') is-invalid @enderror" name="last_name" placeholder="Last Name *">
         </div>
-    
+            @error('last_name')
+                <div class="alert alert-danger">{{ $message }}</div>
+            @enderror
         <div class="form-group">
-             <textarea rows="10" name="message" id="message" class="form-control" placeholder="Message"></textarea>
+             <textarea rows="10" name="message" id="message" class="form-control @error('message') is-invalid @enderror" placeholder="Message"></textarea>
         </div>
-
+            @error('message')
+                <div class="alert alert-danger">{{ $message }}</div>
+            @enderror
         <button type="submit" class="btn btn-primary">Submit</button>
          </form>
       </div>

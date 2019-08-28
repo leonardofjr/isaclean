@@ -24,9 +24,9 @@ class SendTestimonialValidation extends FormRequest
     public function rules()
     {
         return [
-            'company_name' => 'required',
-            'first_name' => 'required',
-            'last_name' => 'required',
+            'company_name' => 'required|max:100',
+            'first_name' => 'required|max:35',
+            'last_name' => 'required|max:35',
             'message' => 'required',
         ];
     }
