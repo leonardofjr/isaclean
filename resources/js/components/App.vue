@@ -1,17 +1,8 @@
 <template>
-    <div>
-        <div class="row">
-            <div >
-                <div class="card">
-                    <div class="card-header">App Component</div>
 
-                    <div class="card-body">
-                        I'm an app component.
-                    </div>
-                </div>
+            <div >
+                You are logged in!
             </div>
-        </div>
-    </div>
 </template>
 
 <script>

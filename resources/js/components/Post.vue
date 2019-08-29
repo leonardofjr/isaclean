@@ -1,17 +1,18 @@
 <template>
-    <div>
-        <div class="row">
-            <div >
-                <div class="card">
-                    <div class="card-header">Post Component</div>
-
-                    <div class="card-body">
-                        I'm an post component.
-                    </div>
+        <section>
+            <header class="row">
+                <div class="col-lg-10">
+                     <h2>Post</h2>
                 </div>
+
+                <div class="col-lg-2">
+                    <router-link to="/new-post"><button class="btn btn-primary">New Post</button></router-link>
+                </div>
+            </header>
+            <div class="row">
+
             </div>
-        </div>
-    </div>
+        </section>
 </template>
 
 <script>

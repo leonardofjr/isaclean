@@ -12,6 +12,11 @@
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
 
+  
+    <!-- include summernote css/js -->
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.12/summernote.css" rel="stylesheet">
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.12/summernote.js" defer></script>
+
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
@@ -73,6 +78,8 @@
         </nav>
 
         <main class="py-4">
+            @yield('content')
+            <!--
            <div id="app">
                 <div class="container">
                     <div class="row">
@@ -93,6 +100,7 @@
 
                 </div>
            </div>
+        -->
         </main>
     </div>
 </body>
