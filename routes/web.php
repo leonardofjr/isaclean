@@ -26,3 +26,8 @@ Route::post('/send-quote', 'Frontend\GetAFreeQuoteController@mail');
 
 Route::get('/write-a-testimonial', 'Frontend\TestimonialController@index')->name('Write a Testimonial');
 Route::post('/send-testimonial', 'Frontend\TestimonialController@mail');
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home')->middleware('verified');
+Auth::routes(['verify' => true]);
+
