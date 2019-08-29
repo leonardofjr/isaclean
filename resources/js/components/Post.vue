@@ -1,12 +1,12 @@
 <template>
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-md-8">
+    <div>
+        <div class="row">
+            <div >
                 <div class="card">
-                    <div class="card-header">Example Component</div>
+                    <div class="card-header">Post Component</div>
 
                     <div class="card-body">
-                        I'm an example component.
+                        I'm an post component.
                     </div>
                 </div>
             </div>
