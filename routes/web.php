@@ -31,3 +31,4 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home')->middleware('verified');
 Auth::routes(['verify' => true]);
 
+Route::post('store-post', 'Backend\BlogController@store' );

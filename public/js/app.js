@@ -1891,14 +1891,46 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
+  data: function data() {
+    return {
+      title: '',
+      content: ''
+    };
+  },
   mounted: function mounted() {
-    var summernoteScript = document.createElement('script');
-    summernoteScript.setAttribute('src', 'js/summernote.js');
-    document.head.appendChild(summernoteScript);
+    this.initSummernote();
+    this.initCroppie();
   },
   methods: {
-    submit: function submit() {}
+    initSummernote: function initSummernote() {
+      var summernoteScript = document.createElement('script');
+      summernoteScript.setAttribute('src', 'js/summernote.js');
+      document.head.appendChild(summernoteScript);
+    },
+    initCroppie: function initCroppie() {
+      var croppieScript = document.createElement('script');
+      croppieScript.setAttribute('src', 'js/croppie.js');
+      document.head.appendChild(croppieScript);
+    },
+    submit: function submit(e) {
+      e.preventDefault();
+      axios.post('http://localhost:8000/store-post', {
+        title: this.title,
+        content: this.content
+      }).then(function (response) {
+        if (response.status === 200) {}
+      });
+    }
   }
 });
 
@@ -37260,19 +37292,79 @@ var render = function() {
     _vm._m(0),
     _vm._v(" "),
     _c("div", { staticClass: "col-lg-12" }, [
-      _c("form", { attrs: { method: "POST" } }, [
-        _vm._m(1),
-        _vm._v(" "),
-        _vm._m(2),
-        _vm._v(" "),
-        _c("div", { staticClass: "text-right" }, [
-          _c(
-            "button",
-            { staticClass: "btn btn-primary", on: { click: _vm.submit } },
-            [_vm._v("Publish")]
-          )
-        ])
-      ])
+      _c(
+        "form",
+        {
+          attrs: { enctype: "multipart/form-data" },
+          on: { submit: _vm.submit }
+        },
+        [
+          _c("div", { staticClass: "form-group row" }, [
+            _c("label", { staticClass: "col-2", attrs: { for: "title" } }, [
+              _vm._v("Title")
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "col-10" }, [
+              _c("input", {
+                directives: [
+                  {
+                    name: "model",
+                    rawName: "v-model",
+                    value: _vm.title,
+                    expression: "title"
+                  }
+                ],
+                staticClass: "form-control",
+                attrs: { type: "text", id: "title" },
+                domProps: { value: _vm.title },
+                on: {
+                  input: function($event) {
+                    if ($event.target.composing) {
+                      return
+                    }
+                    _vm.title = $event.target.value
+                  }
+                }
+              })
+            ])
+          ]),
+          _vm._v(" "),
+          _c("div", { attrs: { id: "upload_demo" } }),
+          _vm._v(" "),
+          _vm._m(1),
+          _vm._v(" "),
+          _c("div", { staticClass: "form-group row" }, [
+            _c("label", { staticClass: "col-2", attrs: { for: "content" } }, [
+              _vm._v("Content")
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "col-10" }, [
+              _c("textarea", {
+                directives: [
+                  {
+                    name: "model",
+                    rawName: "v-model",
+                    value: _vm.content,
+                    expression: "content"
+                  }
+                ],
+                attrs: { id: "content", name: "content" },
+                domProps: { value: _vm.content },
+                on: {
+                  input: function($event) {
+                    if ($event.target.composing) {
+                      return
+                    }
+                    _vm.content = $event.target.value
+                  }
+                }
+              })
+            ])
+          ]),
+          _vm._v(" "),
+          _vm._m(2)
+        ]
+      )
     ])
   ])
 }
@@ -37292,14 +37384,19 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "form-group row" }, [
-      _c("label", { staticClass: "col-2", attrs: { for: "title" } }, [
-        _vm._v("Title")
+      _c("label", { staticClass: "col-2", attrs: { for: "upload_image" } }, [
+        _vm._v("Cover Image")
       ]),
       _vm._v(" "),
       _c("div", { staticClass: "col-10" }, [
         _c("input", {
           staticClass: "form-control",
-          attrs: { type: "text", id: "title" }
+          attrs: {
+            type: "file",
+            accept: "image/*",
+            id: "upload_image",
+            name: "upload_image"
+          }
         })
       ])
     ])
@@ -37308,14 +37405,8 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "form-group row" }, [
-      _c("label", { staticClass: "col-2", attrs: { for: "title" } }, [
-        _vm._v("Content")
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "col-10" }, [
-        _c("div", { attrs: { id: "summernote" } })
-      ])
+    return _c("div", { staticClass: "text-right" }, [
+      _c("button", { staticClass: "btn btn-primary" }, [_vm._v("Publish")])
     ])
   }
 ]

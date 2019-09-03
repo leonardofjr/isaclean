@@ -1,3 +1,3 @@
 $(document).ready(function() {
-    $('#summernote').summernote();
+    $('#content').summernote();
   });
