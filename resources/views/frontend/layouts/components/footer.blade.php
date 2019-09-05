@@ -6,7 +6,7 @@
             </ul>
         </div>
         <div class="col-md-9">
-            <img src="imgs/.jpg" class="img-fluid" alt="An image of a white cargo van with the isa commercial cleaning service logo">
+            <img src="/imgs/isa-van-right.png" class="img-fluid" alt="An image of a white cargo van with the isa commercial cleaning service logo">
         </div>
     </div>
 
