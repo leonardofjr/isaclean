@@ -32,3 +32,5 @@ Route::get('/home', 'HomeController@index')->name('home')->middleware('verified'
 Auth::routes(['verify' => true]);
 
 Route::post('store-post', 'Backend\BlogController@store' );
+
+Route::get('/news/1', 'Frontend\NewsController@page')->name('News');

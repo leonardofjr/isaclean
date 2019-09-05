@@ -17,6 +17,10 @@ class NewsController extends Controller
         return view('frontend/pages/blog');
     }
 
+    public function page()
+    {
+        return view('frontend/pages/blog-page');
+    }
     /**
      * Show the form for creating a new resource.
      *
