@@ -1924,6 +1924,7 @@ __webpack_require__.r(__webpack_exports__);
     },
     submit: function submit(e) {
       e.preventDefault();
+      this.content = $('#content').val();
       axios.post('http://localhost:8000/store-post', {
         title: this.title,
         content: this.content

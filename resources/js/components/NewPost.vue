@@ -50,6 +50,7 @@
             },
 
             methods: {
+
                 initSummernote: function() {
                     let summernoteScript = document.createElement('script');
                     summernoteScript.setAttribute('src', 'js/summernote.js');
@@ -64,6 +65,8 @@
 
                 submit: function(e) {
                     e.preventDefault();
+                    this.content = $('#content').val();
+
                     axios
                         .post('http://localhost:8000/store-post', {
                             title: this.title,
