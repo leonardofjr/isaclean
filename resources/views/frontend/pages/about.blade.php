@@ -1,7 +1,7 @@
 @extends('frontend.layouts.app')
-@section('title', 'About - ISA Commercial Cleaning Services')
+@section('title', 'About - Over 20 years of cleaning service experience')
 @section('meta-seo')
-    <meta name="description"  content="We provide cleaning services in Markham and surrounding areas such as Stouffville and Richmond Hill">
+    <meta name="description"  content="We've been providing professional janitorial services to commercial facilities in Markham and other areas such as Stouffville and Richmond Hill.">
 @endsection
 @section('content')
 
@@ -9,7 +9,7 @@
               <div class="row">
                   
                  <div class="col-lg-6 image-wrap-8 p-0">
-                    <img align="right" src="imgs/reliable-cleaning-service.png" alt="">
+                    <img align="right" src="imgs/reliable-cleaning-service.png" alt="Two businessmen shaking hands.">
                   </div>
 
                  <div class="col-lg-6 p-0" >
@@ -41,7 +41,7 @@
                   </div>
 
                   <div class="col-lg-6 image-wrap-7 mb-4 mb-lg-0 p-0">
-                    <img  src="imgs/business-meeting.jpg" alt="">
+                    <img  src="imgs/business-meeting.jpg" alt="Three businessmen negioating cleaning quote.">
                   </div>
 
               </div>
@@ -49,7 +49,7 @@
      
             <section class="container">
               <div class="row">
-                   <div class="col-lg-5 offset-lg-1 image-6">
+                   <div class="col-lg-5 offset-lg-1 image-6 d-none d-md-block">
                   </div>
                     <div class="col-lg-5 p-3 p-lg-4 bg-primary">
                     <h2>OUR CUSTOMER EXPERIENCE AND COMMUNICATION ENSURES YOU GET EVERY BANG FOR YOUR BUCK</h2>

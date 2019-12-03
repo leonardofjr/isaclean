@@ -22,7 +22,7 @@
     </head>
     <body>
             
-        <header>
+        <header  class="mb-5">
             @include('frontend.layouts.components.topbar')
             @include('frontend.layouts.components.navbar')
         </header>

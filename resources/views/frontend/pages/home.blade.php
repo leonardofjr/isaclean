@@ -1,7 +1,7 @@
 @extends('frontend.layouts.app')
-@section('title', 'ISA Commercial Cleaning Services')
+@section('title', 'Best cleaning Services | Markham, Stouffville, Richmond Hill')
 @section('meta-seo')
-    <meta name="description"  content="We provide cleaning services in Markham and surrounding areas such as Stouffville and Richmond Hill">
+    <meta name="description"  content="ISA Commercial Cleaning Services has been providing commercial and janitorial cleaning services for offices, churches, daycares, schools and much more.">
 @endsection
 @section('content')
     <section class="bg-primary main-section section-1 ">
