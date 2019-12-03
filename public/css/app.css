@@ -10658,16 +10658,41 @@ header {
   margin-bottom: 1em;
 }
 
+/* Logo */
+
 .navbar-brand img {
-  width: 70%;
+  width: 50%;
 }
 
 footer {
   background: #f5f5f5;
 }
 
-body {
-  overflow-x: hidden;
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1 {
+  font-size: 24px;
+}
+
+h2 {
+  font-size: 22px;
+  font-weight: 400;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+p {
+  font-size: 12px;
 }
 
 .image-1 {

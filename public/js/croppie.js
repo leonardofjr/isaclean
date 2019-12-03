@@ -23,3 +23,14 @@ $('#upload_image').on('change', function() {
   reader.readAsDataURL(this.files[0]);
 
 })
+
+
+var image;
+                  
+console.log(image);
+       $image_crop.croppie('result', {
+         type: 'canvas',
+         size: 'viewport',
+     }).then(function(response) {
+         image = response;
+     })

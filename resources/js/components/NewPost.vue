@@ -6,11 +6,11 @@
                 </div>
             </header>
             <div class="col-lg-12">
-                <form  enctype="multipart/form-data" @submit="submit">
+                <form  enctype="multipart/form-data" @submit="submit" id="myForm">
                     <div class="form-group row">
                         <label class="col-2" for="title">Title</label>
                         <div class="col-10">
-                            <input type="text" id="title" v-model="title" class="form-control">
+                            <input type="text" id="title" name="title" v-model="title" class="form-control">
                         </div>
                     </div>
 
@@ -37,11 +37,15 @@
 </template>
 
 <script>
+
+import Croppie from 'croppie';
     export default {
         data() {
           return {
+              croppie: null,
               title: '',
               content: '',
+              image: '',
           }  
         },
         mounted() {
@@ -58,20 +62,47 @@
                     
                 },
                 initCroppie: function() {
-                    let croppieScript = document.createElement('script');
-                    croppieScript.setAttribute('src', 'js/croppie.js');
-                    document.head.appendChild(croppieScript);
+                    //let croppieScript = document.createElement('script');
+                    //croppieScript.setAttribute('src', 'js/croppie.js');
+                   // document.head.appendChild(croppieScript);
+                console.log(this.croppie);
+                    
+                   this.croppie = new Croppie($('#upload_demo')[0], {
+                        enableExif: true,
+                        viewport: {
+                            width: 300,
+                            height: 300,
+                            type: 'square'
+                        },
+                        boundary: {
+                            width: 400,
+                            height: 400
+                        }
+                   })
+
+                   $('#upload_image').on('change', function() {
+                        var reader = new FileReader();
+                        reader.onload = function(e) {
+                        this.croppie.croppie('bind', {
+                        url: e.target.result
+                        }).then(function() {
+                        console.log('Jquery bind complete');
+                        });
+                    }
+                    reader.readAsDataURL(this.files[0]);
+
+                    })
+
                 },
 
                 submit: function(e) {
                     e.preventDefault();
-                    this.content = $('#content').val();
+             
+                    var formData = new FormData($('#myForm')[0]);
+      
 
                     axios
-                        .post('http://localhost:8000/store-post', {
-                            title: this.title,
-                            content: this.content,
-                        })
+                        .post('http://localhost:8000/store-post', formData)
                         .then(response => {
                             if (response.status === 200) {
                             }
