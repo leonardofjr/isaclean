@@ -19,12 +19,15 @@ Route::get('/about', 'Frontend\AboutController@index')->name('About');
 
 Route::get('/services', 'Frontend\ServicesController@index')->name('Services');
 
+Route::get('/careers', 'Frontend\CareersController@index')->name('Careers');
+Route::post('/send-career-form', 'Frontend\CareersController@mail');
+
 Route::get('/news', 'Frontend\NewsController@index')->name('News');
 
 Route::get('/get-a-free-quote', 'Frontend\GetAFreeQuoteController@index')->name('Get A Free Quote');
 Route::post('/send-quote', 'Frontend\GetAFreeQuoteController@mail');
 
-Route::get('/write-a-testimonial', 'Frontend\TestimonialController@index')->name('Write a Testimonial');
+Route::get('/testimonial-form', 'Frontend\TestimonialController@index')->name('Write a Testimonial');
 Route::post('/send-testimonial', 'Frontend\TestimonialController@mail');
 Auth::routes();
 

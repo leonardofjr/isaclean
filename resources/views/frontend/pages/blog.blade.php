@@ -1,5 +1,5 @@
 @extends('frontend.layouts.app')
-@section('title', 'ISA Commercial Cleaning Services')
+@section('title', 'News - ISA Commercial Cleaning Services')
 @section('meta-seo')
     <meta name="description"  content="We provide cleaning services in Markham and surrounding areas such as Stouffville and Richmond Hill">
 @endsection

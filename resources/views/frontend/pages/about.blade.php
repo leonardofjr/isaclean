@@ -1,5 +1,5 @@
 @extends('frontend.layouts.app')
-@section('title', 'ISA Commercial Cleaning Services')
+@section('title', 'About - ISA Commercial Cleaning Services')
 @section('meta-seo')
     <meta name="description"  content="We provide cleaning services in Markham and surrounding areas such as Stouffville and Richmond Hill">
 @endsection
@@ -29,8 +29,8 @@
                  <div class="col-lg-6 p-0">
                     <div class="bg-primary p-3" style="width: 100%; height: 100%">
                     
-                        <h1 class="h1">What we do?</h1>
-                        <h2 class="h2">OUR CUSTOMER EXPERIENCE AND COMMUNICATION ENSURES YOU GET EVERY BANG FOR YOUR BUCK</h2>
+                        <h1>What we do?</h1>
+                        <h2>OUR CUSTOMER EXPERIENCE AND COMMUNICATION ENSURES YOU GET EVERY BANG FOR YOUR BUCK</h2>
                         <p>We do have dedicated teams of personnel with hands on experience that are always committed to provide reliable and competitive services to all our clients. We execute all our jobs timely to a high safety and quality standard.</p>
                         <ul>
                           <li>Excellent communication and response rate to provide you with the best janitorial services</li>
@@ -52,7 +52,7 @@
                    <div class="col-lg-5 offset-lg-1 image-6">
                   </div>
                     <div class="col-lg-5 p-3 p-lg-4 bg-primary">
-                    <h2 class="h2">OUR CUSTOMER EXPERIENCE AND COMMUNICATION ENSURES YOU GET EVERY BANG FOR YOUR BUCK</h2>
+                    <h2>OUR CUSTOMER EXPERIENCE AND COMMUNICATION ENSURES YOU GET EVERY BANG FOR YOUR BUCK</h2>
                     <p>We do have dedicated teams of personnel with hands on experience that are always committed to provide reliable and competitive services to all our clients. We execute all our jobs timely to a high safety and quality standard.</p>
                     <ul>
                       <li>Excellent communication and response rate to provide you with the best janitorial services</li>
