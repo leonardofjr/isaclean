@@ -29,7 +29,7 @@ class SendCareerForm extends Mailable
     public function build()
     {
         return $this->from('careers@isaclean.ca')
-        ->markdown('mail.testimonial')
+        ->markdown('mail.careers')
         ->with([
             'company_name' => $request->company_name,
             'first_name' => $request->first_name,
