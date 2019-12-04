@@ -10661,7 +10661,13 @@ header {
 /* Logo */
 
 .navbar-brand img {
-  width: 50%;
+  width: 120px;
+}
+
+@media (min-width: 992px) {
+  .navbar-brand img {
+    width: 160px;
+  }
 }
 
 footer {

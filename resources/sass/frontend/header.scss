@@ -4,5 +4,9 @@ header {
 
 /* Logo */
 .navbar-brand img  {
-    width: 50%;
+    width: 120px;
+
+    @include breakpoint(md) {
+        width: 160px;
+    }
 }
