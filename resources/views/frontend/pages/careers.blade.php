@@ -7,7 +7,7 @@
 <section class="container">
    <div class="row">
       <div class="col-lg-12">
-        <h2 class="text-uppercase">Careers</h2>
+        <h1 class="text-uppercase font-weight-bold">{{Request::route()->getName()}}</h1>
         <p>Please fill out all the informatio below if you’re looking for work. We will contact you if we feel you got the requirements for the job.</p>
          <form method="post" action="send-career-form">
          <input type="hidden" name="_token" value={{csrf_token()}}>

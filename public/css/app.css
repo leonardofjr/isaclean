@@ -10695,6 +10695,10 @@ p {
   font-size: 12px;
 }
 
+.btn-secondary {
+  background-color: #bbdd33 !important;
+}
+
 .image-1 {
   height: 500px;
   background-repeat: no-repeat;

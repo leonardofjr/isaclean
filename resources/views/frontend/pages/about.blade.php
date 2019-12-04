@@ -14,7 +14,7 @@
 
                  <div class="col-lg-6 p-0" >
                      <div class=" p-3" style="width 100%; height: 100%">
-                     <h1>Why Us?</h1>
+                      <h1 class="text-uppercase font-weight-bold">{{Request::route()->getName()}}</h1>
                       <p>For over 20 years ISA Commercial Cleaning Services has been providing professional janitorial services to commercial facilities. We have developed systems and processes to ensure the highest degree of quality control and communication. Many businesses in Markham and surrounding areas rely on our commercial cleaning services to keep their facilities healthy and clean every day.</p>
                       </div>
                   </div>

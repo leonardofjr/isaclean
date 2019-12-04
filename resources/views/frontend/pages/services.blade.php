@@ -8,7 +8,7 @@
               <div class="row">
 
                  <div class="col-lg-6">
-                    <h1>What we do?</h1>
+                    <h1 class="text-uppercase font-weight-bold">{{Request::route()->getName()}}</h1>
                     <h2 class="text-uppercase my-4 ">Simply Stated, we treat our customers and our employees like family.</h2>
                     <p>That’s our difference. You want timely, reliable service from someone who really cares about your satisfaction and who has pride in his work. With ISA Commercial Cleaning Services, that’s precisely what you’ll get.</p>
                     <p>Our highly trained cleaning professionals are dedicated to go above your expectations. We are devoted to cleaning your facility exactly the way you want it. ISA Commercial Cleaning Services uses the latest methods, equipment and technology to do the job.</p>

@@ -7,8 +7,8 @@
 <section class="container">
    <div class="row">
       <div class="col-lg-6">
-         <h2 class="text-uppercase">Testimonial</h2>
-         <div class="et_pb_text_inner">
+        <h1 class="text-uppercase font-weight-bold">{{Request::route()->getName()}}</h1>
+        <div class="et_pb_text_inner">
             <p>Dear Sir/Madam,</p>
                 <p>We are glad that we have managed to provide you with excellent customer satisfaction. It is our mission to provide our customers with excellent communication and client satisfaction. We are honored that you have taken the time to write a testimonial for us.</p>
                 <p>We look forward to cleaning your facility for the upcoming years to come.</p>

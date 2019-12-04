@@ -7,8 +7,8 @@
 <section class="container">
    <div class="row">
       <div class="col-lg-6">
-         <h2 class="text-uppercase">Request a quote</h2>
-         <div>
+        <h1 class="text-uppercase font-weight-bold">{{Request::route()->getName()}}</h1>
+        <div>
             <p>We provide free commercial cleaning estimates.&nbsp;Simply complete our quick form, and a&nbsp;member of our team will be in touch with you to discuss your needs and set up a time to meet and see your facility.</p>
             <h3>Customer Satisfaction is our Mission.&nbsp;</h3>
             <p>We’re proud to deliver excellent cleaning services each and every day. Your satisfaction is extremely important to us.</p>

@@ -11,7 +11,7 @@
                     <h1>BEST OFFICE CLEANING & JANITORIAL SERVICES IN MARKHAM AND SURROUNDING AREAS</h1>
 
                     <p>Stop wasting money for poor janitorial cleaning services</p>
-                    <a href="get-a-free-quote"> <button class="btn btn-primary mb-3">Get a Free Quote</button></a>
+                    <a href="get-a-free-quote"> <button class="btn btn-secondary mb-3">Get a Free Quote</button></a>
                 </div>
                 <div class="col-lg-5 p-md-0">
                     <img class="img-fluid" src="imgs/janitor-dust-mopping.gif" alt="The image displays a black and white image of a janitor dust mopping and a mop bucket to his right.">
