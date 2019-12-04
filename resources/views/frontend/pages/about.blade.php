@@ -28,8 +28,6 @@
 
                  <div class="col-lg-6 p-0">
                     <div class="bg-primary p-3" style="width: 100%; height: 100%">
-                    
-                        <h1>What we do?</h1>
                         <h2>OUR CUSTOMER EXPERIENCE AND COMMUNICATION ENSURES YOU GET EVERY BANG FOR YOUR BUCK</h2>
                         <p>We do have dedicated teams of personnel with hands on experience that are always committed to provide reliable and competitive services to all our clients. We execute all our jobs timely to a high safety and quality standard.</p>
                         <ul>
@@ -52,12 +50,13 @@
                    <div class="col-lg-5 offset-lg-1 image-6 d-none d-md-block">
                   </div>
                     <div class="col-lg-5 p-3 p-lg-4 bg-primary">
-                    <h2>OUR CUSTOMER EXPERIENCE AND COMMUNICATION ENSURES YOU GET EVERY BANG FOR YOUR BUCK</h2>
-                    <p>We do have dedicated teams of personnel with hands on experience that are always committed to provide reliable and competitive services to all our clients. We execute all our jobs timely to a high safety and quality standard.</p>
+                    <h2>PERFORMANCE ASSURANCE PROGRAM</h2>
+                    <p>Ask about our performance assurance program that helps to gurantee you high performance cleaning services all the time.</p>
                     <ul>
-                      <li>Excellent communication and response rate to provide you with the best janitorial services</li>
-                      <li>Bonded & Insured for your peace of mind</li>
-                      <li>Performance Assurance Program ensures you get the best commercial cleaning service you deserve</li>
+                      <li>Task List</li>
+                      <li>Time Logs</li>
+                      <li>Training</li>
+                      <li>Inspections</li>
                     </ul>
                   </div>
               </div>
