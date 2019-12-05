@@ -16,7 +16,7 @@
                   </div>
 
                   <div class="col-lg-6 image-wrap-7 mb-5 mb-lg-0">
-                    <img class="img-fluid" src="imgs/polishing-floor.gif" alt="Professional cleaner using a floor polishing machine to polish marble floors.">
+                    <img class="img-fluid" src="imgs/polishing-floor.png" alt="Professional cleaner using a floor polishing machine to polish marble floors.">
                   </div>
 
               </div>
@@ -26,7 +26,7 @@
               <div class="row">
                   
                  <div class="col-lg-6 image-wrap-8 p-0">
-                    <img  align="right" src="imgs/clean-office.jpg" alt="Office cleaned to ISA Commercial Cleaning Services standards">
+                    <img  align="right" src="imgs/clean-office.png" alt="Office cleaned to ISA Commercial Cleaning Services standards">
                   </div>
 
                  <div class="col-lg-6 p-0" >
@@ -64,7 +64,7 @@
 
                     </div>
                     <div class="col-lg-6 image-wrap-9">
-                         <img  width="100%" src="/imgs/office-clean.jpg" alt="A well cleaned lobby.">
+                         <img  width="100%" src="/imgs/clean-office-lobby.png" alt="A well cleaned lobby.">
                     </div>
                 </div>
               </div>

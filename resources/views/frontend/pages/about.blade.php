@@ -39,7 +39,7 @@
                   </div>
 
                   <div class="col-lg-6 image-wrap-7 mb-4 mb-lg-0 p-0">
-                    <img  src="imgs/business-meeting.jpg" alt="Three businessmen negioating cleaning quote.">
+                    <img  src="imgs/business-meeting.png" alt="Three businessmen negioating cleaning quote.">
                   </div>
 
               </div>
@@ -48,7 +48,7 @@
             <section class="container">
               <div class="row">
                    <div class="col-lg-5 offset-lg-1 d-none d-md-block p-0">
-                     <img class="img-fluid"src="imgs/business-man-on-phone.jpg" alt="">
+                     <img class="img-fluid"src="imgs/business-man-on-phone.png" alt="">
                   </div>
                     <div class="col-lg-5 p-3 p-lg-4 bg-primary">
                     <h2>PERFORMANCE ASSURANCE PROGRAM</h2>

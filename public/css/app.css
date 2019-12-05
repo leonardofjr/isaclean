@@ -10705,13 +10705,6 @@ p {
   background-color: #bbdd33 !important;
 }
 
-.image-6 {
-  height: 500px;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-image: url(/images/business-man-on-phone.jpg?f0d7c80489b52d5bd5cb85d1c9893324);
-}
-
 @media (min-width: 992px) {
   .container-fluid:nth-child(1) .container-fluid:nth-child(2) .row {
     position: relative;

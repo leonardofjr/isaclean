@@ -14,7 +14,7 @@
                     <a href="get-a-free-quote"> <button class="btn btn-secondary mb-3">Get a Free Quote</button></a>
                 </div>
                 <div class="col-lg-5 p-md-0">
-                    <img class="img-fluid" src="imgs/janitor-dust-mopping.gif" alt="The image displays a black and white image of a janitor dust mopping and a mop bucket to his right.">
+                    <img class="img-fluid" src="imgs/janitor-dust-mopping.png" alt="The image displays a black and white image of a janitor dust mopping and a mop bucket to his right.">
                 </div>
             </div>
          </div>
@@ -31,7 +31,7 @@
                   </div>
 
                   <div class="col-lg-6 image-wrap-7 mb-4 mb-lg-0 p-0">
-                    <img  src="imgs/floor-scrubbing-machine.jpg" alt="A floor cleaning specialist scrubbing marble floors with a professional floor scrubbing machine">
+                    <img  src="imgs/floor-scrubbing-machine.png" alt="A floor cleaning specialist scrubbing marble floors with a professional floor scrubbing machine">
                   </div>
 
               </div>
@@ -41,7 +41,7 @@
               <div class="row">
                   
                  <div class="col-lg-6 image-wrap-8 p-0 d-none d-md-block">
-                    <img align="right" src="imgs/bucket-cleaning-supplies.jpeg" alt="Office cleaner holding a bucket of office cleaning supplies.">
+                    <img  class="float-right" src="imgs/bucket-cleaning-supplies.png" alt="Office cleaner holding a bucket of office cleaning supplies.">
                   </div>
 
                  <div class="col-lg-6 p-0" >
@@ -72,7 +72,7 @@
                 </div>
 
                 <div class="col-lg-6 image-wrap p-0">
-                     <img style="width: 100%"   src="/imgs/carpet-cleaning.gif" alt="A professional cleaner vaccuming an office carpet.">
+                     <img style="width: 100%"   src="/imgs/carpet-cleaning.png" alt="A professional cleaner vaccuming an office carpet.">
                 </div>
             </div>
          </div>
