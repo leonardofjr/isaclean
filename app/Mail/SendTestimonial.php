@@ -29,7 +29,7 @@ class SendTestimonial extends Mailable
      */
     public function build(Request $request)
     {
-        return $this->from('testimonial@isaclean.ca')
+        return $this->from(env('MAIL_FROM_ADDRESS'))
                     ->markdown('mail.testimonial')
                     ->with([
                         'company_name' => $request->company_name,

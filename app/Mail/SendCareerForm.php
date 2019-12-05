@@ -28,7 +28,7 @@ class SendCareerForm extends Mailable
      */
     public function build()
     {
-        return $this->from('careers@isaclean.ca')
+        return $this->from(env('MAIL_FROM_ADDRESS'))
         ->markdown('mail.careers')
         ->with([
             'company_name' => $request->company_name,

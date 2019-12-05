@@ -24,7 +24,9 @@ class TestimonialController extends Controller
     {  
          $to = 'leonardo.f.jr@gmail.com';
 
-        Mail::to($to)->send(new SendTestimonial);
+         Mail::to($to)->send(new SendTestimonial);
+
+         return redirect('/');
     }
 
     /**
