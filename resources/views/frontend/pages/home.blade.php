@@ -31,7 +31,7 @@
                   </div>
 
                   <div class="col-lg-6 image-wrap-7 mb-4 mb-lg-0 p-0">
-                    <img  src="images/floor-scrubbing-machine.jpg" alt="A floor cleaning specialist scrubbing marble floors with a professional floor scrubbing machine">
+                    <img  src="imgs/floor-scrubbing-machine.jpg" alt="A floor cleaning specialist scrubbing marble floors with a professional floor scrubbing machine">
                   </div>
 
               </div>

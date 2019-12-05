@@ -47,7 +47,8 @@
      
             <section class="container">
               <div class="row">
-                   <div class="col-lg-5 offset-lg-1 image-6 d-none d-md-block">
+                   <div class="col-lg-5 offset-lg-1 d-none d-md-block p-0">
+                     <img class="img-fluid"src="imgs/business-man-on-phone.jpg" alt="">
                   </div>
                     <div class="col-lg-5 p-3 p-lg-4 bg-primary">
                     <h2>PERFORMANCE ASSURANCE PROGRAM</h2>
