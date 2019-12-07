@@ -92,6 +92,7 @@ import Croppie from 'croppie';
                     reader.readAsDataURL(this.files[0]);
 
                     })
+                    
 
                 },
 
