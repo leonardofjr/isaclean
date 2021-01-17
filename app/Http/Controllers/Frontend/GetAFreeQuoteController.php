@@ -21,7 +21,7 @@ class GetAFreeQuoteController extends Controller
     }
 
     public function mail(GetAFreeQuoteFormValidation $request) 
-    {   $to = 'leonardo.f.jr@gmail.com';
+    {   $to = 'leo@isaclean.ca';
         Mail::to($to)->send(new SendQuoteRequest);
     }
 

@@ -11,10 +11,8 @@
 |
 */
 
-Route::get('/', function () {
-    return view('frontend.pages.home');
-});
 
+Route::get('/', 'Frontend\IndexController@index')->name('Home');
 Route::get('/why-us', 'Frontend\AboutController@index')->name('Why Us?');
 
 Route::get('/services', 'Frontend\ServicesController@index')->name('Services');
@@ -29,11 +27,10 @@ Route::post('/send-quote', 'Frontend\GetAFreeQuoteController@mail');
 
 Route::get('/testimonial-form', 'Frontend\TestimonialController@index')->name('Testimonial');
 Route::post('/send-testimonial', 'Frontend\TestimonialController@mail');
-Auth::routes();
-
+///Auth::routes();Auth::routes(['register' => false]);
+Auth::routes(['login' => false]);
 Route::get('/home', 'HomeController@index')->name('home')->middleware('verified');
-Auth::routes(['verify' => true]);
-
+//Auth::routes(['verify' => true]);
 Route::post('store-post', 'Backend\BlogController@store' );
 
 Route::get('/news/1', 'Frontend\NewsController@page')->name('News');

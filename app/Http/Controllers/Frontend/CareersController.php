@@ -21,7 +21,7 @@ class CareersController extends Controller
 
     public function mail(SendCareerFormValidation $request)
     {  
-         $to = 'leonardo.f.jr@gmail.com';
+         $to = 'leo@isaclean.ca';
 
         Mail::to($to)->send(new SendCareerForm);
     }

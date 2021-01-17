@@ -7,13 +7,21 @@
     <section class="bg-primary main-section section-1 ">
         <div class="container">
             <div class="row pt-4">
-                <div class="col-lg-7 p-md-0">
-                    <h1>BEST OFFICE CLEANING & JANITORIAL SERVICES IN MARKHAM AND SURROUNDING AREAS</h1>
+                <div class="col-lg-8 p-md-0">
+                    <h1>WHAT TYPE OF JANITORIAL CLEANING SERVICE DO YOU NEED?</h1>
 
-                    <p>Stop wasting money for poor janitorial cleaning services</p>
-                    <a href="get-a-free-quote"> <button class="btn btn-secondary mb-3">Get a Free Quote</button></a>
+                    <p>Start saving money with our affordable janitorial cleaning services.</p>
+
+                    <ul class="mb-4">
+                        <li>Commercial Cleaning</li>
+                        <li>Office Cleaning</li>
+                        <li>School Cleaning</li>
+                        <li>Daycare Cleaning</li>
+                        <li>Church Cleaning</li>
+                    </ul>
+                    <a href="get-a-free-quote"> <button class="btn btn-secondary mb-3" style="font-size: 1.4em;">Get a Free Quote</button></a>
                 </div>
-                <div class="col-lg-5 p-md-0">
+                <div class="col-lg-4 p-md-0">
                     <img class="img-fluid" src="imgs/janitor-dust-mopping.png" alt="The image displays a black and white image of a janitor dust mopping and a mop bucket to his right.">
                 </div>
             </div>

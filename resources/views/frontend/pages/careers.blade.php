@@ -13,14 +13,14 @@
          <input type="hidden" name="_token" value={{csrf_token()}}>
          <div class="form-row">
             <div class="form-group col-md-6">
-                <input type="text" id="first_name" class="form-control @error('first_name') is-invalid @enderror" name="first_name" placeholder="First Name *">
+                <input type="text" id="first_name" class="form-control @error('first_name') is-invalid @enderror" name="first_name" placeholder="First Name *" value="{{ old('first_name') }}"  autocomplete="first_name" autofocus>
                     @error('first_name')
                         <div class="alert alert-danger">{{ $message }}</div>
                     @enderror
             </div>
 
             <div class="form-group col-md-6">
-                <input type="text" id="last_name" class="form-control @error('last_name') is-invalid @enderror" name="last_name" placeholder="Last Name *">
+                <input type="text" id="last_name" class="form-control @error('last_name') is-invalid @enderror" name="last_name" placeholder="Last Name *" value="{{ old('last_name') }}"  autocomplete="last_name" autofocus>
                     @error('last_name')
                         <div class="alert alert-danger">{{ $message }}</div>
                     @enderror          
@@ -28,13 +28,13 @@
          </div>
          <div class="form-row">
             <div class="form-group col-md-6">
-                    <input type="text" id="email" class="form-control @error('email') is-invalid @enderror" name="email" placeholder="Email *">
+                    <input type="text" id="email" class="form-control @error('email') is-invalid @enderror" name="email" placeholder="Email *" value="{{ old('email') }}"  autocomplete="email" autofocus>
                     @error('email')
                       <div class="alert alert-danger">{{ $message }}</div>
                     @enderror
                 </div>
                 <div class="form-group col-md-6">
-                        <input type="tel" id="phone" class="form-control @error('phone') is-invalid @enderror" name="phone"  placeholder="Phone" pattern="[0-9\s-]*" title="Only numbers allowed.">
+                        <input type="tel" id="phone" class="form-control @error('phone') is-invalid @enderror" name="phone"  placeholder="Phone *" pattern="[0-9\s-]*" title="Only numbers allowed." value="{{ old('phone') }}"  autocomplete="phone" autofocus>
                     @error('phone')
                       <div class="alert alert-danger">{{ $message }}</div>
                     @enderror
@@ -42,7 +42,7 @@
          </div>
       
         <div class="form-group">
-                <select id="position_of_interest" class="form-control @error('position_of_interest') is-invalid @enderror" name="position_of_interest">
+                <select id="position_of_interest" class="form-control @error('position_of_interest') is-invalid @enderror" name="position_of_interest" >
                     <option value="">Position of Interest</option>
                     <option value="Heavy Duty Cleaner">Heavy Duty Cleaner</option>
                     <option value="Light Duty Cleaner">Light Duty Cleaner</option>
@@ -54,7 +54,7 @@
             <div class="alert alert-danger">{{ $message }}</div>
             @enderror
         <div class="form-group">
-             <textarea rows="10" name="message" id="message" class="form-control @error('message') is-invalid @enderror" placeholder="Message"></textarea>
+             <textarea rows="10" name="message" id="message" class="form-control @error('message') is-invalid @enderror" placeholder="Message *" value="{{ old('message') }}"  autocomplete="message" autofocus></textarea>
         </div>
             @error('message')
                 <div class="alert alert-danger">{{ $message }}</div>

@@ -22,7 +22,7 @@ class TestimonialController extends Controller
 
     public function mail(SendTestimonialValidation $request)
     {  
-         $to = 'leonardo.f.jr@gmail.com';
+         $to = 'leo@isaclean.ca';
 
          Mail::to($to)->send(new SendTestimonial);
 

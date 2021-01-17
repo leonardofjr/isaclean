@@ -24,49 +24,49 @@
          <form method="post" action="send-quote">
         <input type="hidden" name="_token" value={{csrf_token()}}>
          <div class="form-group">
-            <input type="text" id="company_name" class="form-control @error('company_name') is-invalid @enderror" name="company_name" placeholder="Company Name *">
+            <input type="text" id="company_name" class="form-control @error('company_name') is-invalid @enderror" name="company_name" placeholder="Company Name *" value="{{ old('company_name') }}"  autocomplete="company_name" autofocus>
         </div>
         @error('company_name')
             <div class="alert alert-danger">{{ $message }}</div>
          @enderror
         <div class="form-group">
-            <input type="text" id="first_name" class="form-control @error('first_name') is-invalid @enderror" name="first_name" placeholder="First Name *">
+            <input type="text" id="first_name" class="form-control @error('first_name') is-invalid @enderror" name="first_name" placeholder="First Name *" value="{{ old('first_name') }}"  autocomplete="first_name" autofocus>
         </div>
         @error('first_name')
             <div class="alert alert-danger">{{ $message }}</div>
         @enderror
         <div class="form-group">
-            <input type="text" id="last_name" class="form-control @error('last_name') is-invalid @enderror" name="last_name" placeholder="Last Name *">
+            <input type="text" id="last_name" class="form-control @error('last_name') is-invalid @enderror" name="last_name" placeholder="Last Name *" value="{{ old('last_name') }}"  autocomplete="last_name" autofocus>
         </div>
         @error('last_name')
             <div class="alert alert-danger">{{ $message }}</div>
         @enderror
         <div class="form-group">
-            <input type="text" id="email" class="form-control @error('email') is-invalid @enderror" name="email" placeholder="Email *">
+            <input type="text" id="email" class="form-control @error('email') is-invalid @enderror" name="email" placeholder="Email *" value="{{ old('email') }}"  autocomplete="email" autofocus>
         </div>
         @error('email')
             <div class="alert alert-danger">{{ $message }}</div>
         @enderror
         <div class="form-group">
-            <input type="text" id="phone" class="form-control @error('phone') is-invalid @enderror" name="phone"  placeholder="Phone" pattern="[0-9\s-]*" title="Only numbers allowed.">
+            <input type="text" id="phone" class="form-control @error('phone') is-invalid @enderror" name="phone"  placeholder="Phone *" pattern="[0-9\s-]*" title="Only numbers allowed." value="{{ old('phone') }}"  autocomplete="phone" autofocus>
         </div>
         @error('phone')
             <div class="alert alert-danger">{{ $message }}</div>
         @enderror
         <div class="form-group">
-            <input type="text" id="street_address" class="form-control @error('street_address') is-invalid @enderror" name="street_address" placeholder="Street Address">
+            <input type="text" id="street_address" class="form-control @error('street_address') is-invalid @enderror" name="street_address" placeholder="Street Address" value="{{ old('street_address') }}"  autocomplete="street_address" autofocus>
         </div>
         @error('street_address')
             <div class="alert alert-danger">{{ $message }}</div>
         @enderror
         <div class="form-group">
-            <input type="text" id="city" class="form-control @error('city') is-invalid @enderror" name="city" placeholder="City *">
+            <input type="text" id="city" class="form-control @error('city') is-invalid @enderror" name="city" placeholder="City *" value="{{ old('city') }}"  autocomplete="city" autofocus>
         </div>
         @error('city')
             <div class="alert alert-danger">{{ $message }}</div>
         @enderror
         <div class="form-group">
-            <input type="text" id="postal_code" class="form-control @error('postal_code') is-invalid @enderror" name="postal_code" placeholder="Postal Code *">
+            <input type="text" id="postal_code" class="form-control @error('postal_code') is-invalid @enderror" name="postal_code" placeholder="Postal Code *" value="{{ old('postal_code') }}"  autocomplete="postal_code" autofocus>
         </div>
         @error('postal_code')
             <div class="alert alert-danger">{{ $message }}</div>
@@ -152,7 +152,7 @@
             <div class="alert alert-danger">{{ $message }}</div>
          @enderror
         <div class="form-group">
-             <textarea rows="10" name="message" id="message" class="form-control @error('message') is-invalid @enderror" placeholder="Message"></textarea>
+             <textarea rows="10" name="message" id="message" class="form-control @error('message') is-invalid @enderror" placeholder="Message" value="{{ old('message') }}"  autocomplete="message" autofocus></textarea>
         </div>
          @error('message')
             <div class="alert alert-danger">{{ $message }}</div>
